@@ -1,0 +1,13 @@
+    Signals Shutoff (31)
+    	A1: Airplane Mode [ Set:Off ] 
+    	A2: Auto-Sync [ Set:Off ] 
+    	A3: Bluetooth [ Set:Off ] 
+    	A4: Mobile Data [ Set:Off ] 
+    	A5: NFC [ Set:Off ] 
+    	A6: WiFi [ Set:Off ] 
+    	A7: Stop Location [ Source:Any ] 
+    	A8: Location Mode [ Mode:Off ] 
+    	A9: Android Firewall - Plugin [ Configuration:6 Timeout (Seconds):0 ] 
+    	A10: Secure Settings [ Configuration:Background Data Disabled Timeout (Seconds):0 ] 
+    	A11: Secure Settings [ Configuration:USB Debugging Disabled Timeout (Seconds):0 ] 
+    

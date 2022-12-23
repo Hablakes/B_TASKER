@@ -1,0 +1,8 @@
+    Cancel Sleep Timer (32)
+    	A1: Stop [ With Error:Off Task:Count Down ] 
+    	A2: Stop [ With Error:Off Task:Media Fade Out ] 
+    	A3: Notify Cancel [ Title:Sleep Timer Warn Not Exist:Off ] 
+    	A4: Notify Cancel [ Title:Volume Level Warn Not Exist:Off ] 
+    	A5: Profile Status [ Name:SHAKE Set:Off ] 
+    	A6: Variable Clear [ Name:%OldVol Pattern Matching:Off Local Variables Only:Off Clear All Variables:Off ] 
+    

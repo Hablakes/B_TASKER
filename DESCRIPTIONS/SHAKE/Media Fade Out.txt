@@ -1,0 +1,15 @@
+    Media Fade Out (27)
+    	A1: Variable Set [ Name:%OldVol To:%VOLM Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ] 
+    	<loop>
+    	A2: Anchor 
+    	A3: Wait [ MS:433 Seconds:0 Minutes:0 Hours:0 Days:0 ] 
+    	A4: Variable Set [ Name:%medvol To:%VOLM Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ] 
+    	A5: Variable Subtract [ Name:%medvol Value:1 Wrap Around:0 ] 
+    	A6: Media Volume [ Level:%medvol Display:Off Sound:Off ] If [ %medvol > 0 ]
+    	A7: Notify [ Title:Sleep Timer Text:Volume: %medvol Icon:hd_device_access_volume_on Number:0 Permanent:Off Priority:3 Repeat Alert:Off LED Colour:Red LED Rate:0 Sound File: Vibration Pattern: Category: ] 
+    	A8: Goto [ Type:Action Label Number:1 Label:loop ] If [ %medvol > 0 ]
+    	A9: Media Control [ Cmd:Pause Simulate Media Button:On Package/App Name:VLC Use Notification If Available:On ] 
+    	A10: Profile Status [ Name:SHAKE Set:Off ] 
+    	A11: Media Volume [ Level:25 Display:Off Sound:Off ] 
+    	A12: Perform Task [ Name:Cancel Sleep Timer Priority:%priority Parameter 1 (%par1): Parameter 2 (%par2): Return Value Variable: Stop:Off ] 
+    

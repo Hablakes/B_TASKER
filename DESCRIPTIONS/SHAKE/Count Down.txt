@@ -1,0 +1,11 @@
+    Count Down (29)
+    	A1: Profile Status [ Name:SHAKE Set:On ] 
+    	A2: Variable Set [ Name:%Timer To:600 Recurse Variables:Off Do Maths:Off Append:Off Max Rounding Digits:3 ] 
+    	<count down>
+    	A3: Anchor 
+    	A4: Notify [ Title:Sleep Timer Text:Time Left: %Timer Icon:null Number:0 Permanent:Off Priority:3 Repeat Alert:Off LED Colour:Green LED Rate:0 Sound File: Vibration Pattern: Category:super_tasker_notifications_created_by_me_the_developer Actions:(1) ] 
+    	A5: Wait [ MS:0 Seconds:1 Minutes:0 Hours:0 Days:0 ] 
+    	A6: Variable Subtract [ Name:%Timer Value:1 Wrap Around:0 ] 
+    	A7: Goto [ Type:Action Label Number:1 Label:count down ] If [ %Timer > 0 ]
+    	A8: Perform Task [ Name:Media Fade Out Priority:%priority Parameter 1 (%par1): Parameter 2 (%par2): Return Value Variable: Stop:Off ] 
+    
